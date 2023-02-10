@@ -1,0 +1,534 @@
+/* header start */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body {
+   margin: 0 auto;
+   padding: 0;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+.disk {
+  margin-left: -240px;
+  width: 90px;
+  height: 90px;
+  margin-bottom: -13px;
+  border-radius: 50%;
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+  transition:         transform .8s ease-in-out;
+}
+.disk:hover {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+.header__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
+  padding: 50px;
+}
+.header__address {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-left: 150px;
+}
+/* анимация значка навигации */
+@-webkit-keyframes swing {
+    15% {
+      -webkit-transform: translateX(9px);
+      transform: translateX(9px);
+    }
+    30% {
+      -webkit-transform: translateX(-9px);
+      transform: translateX(-9px);
+    }
+    40% {
+      -webkit-transform: translateX(6px);
+      transform: translateX(6px);
+    }
+    50% {
+      -webkit-transform: translateX(-6px);
+      transform: translateX(-6px);
+    }
+    65% {
+      -webkit-transform: translateX(3px);
+      transform: translateX(3px);
+    }
+    100% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes swing {
+    15% {
+      -webkit-transform: translateX(9px);
+      transform: translateX(9px);
+    }
+    30% {
+      -webkit-transform: translateX(-9px);
+      transform: translateX(-9px);
+    }
+    40% {
+      -webkit-transform: translateX(6px);
+      transform: translateX(6px);
+    }
+    50% {
+      -webkit-transform: translateX(-6px);
+      transform: translateX(-6px);
+    }
+    65% {
+      -webkit-transform: translateX(3px);
+      transform: translateX(3px);
+    }
+    100% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+  }
+  
+  .swing:hover {
+    -webkit-animation: swing 0.6s ease;
+    animation: swing 0.6s ease;
+     -webkit-animation-iteration-count: 1;
+     animation-iteration-count: 1;
+  }
+/* конец анимации значка навигации */
+.number {
+    font-size: 20px; 
+}
+.bell {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  width: 195px;
+  height: 40px;
+  color: #ffffff;
+  background-color: #67A3FD;
+  border-radius: 4px;
+  border-style: none;
+  color: #053058;
+  color: #ffffff; /* Цвет текста */
+  background: #67A3FD; /* Цвет фона */
+  transition: 0.5s linear; /* Время изменения */
+}
+.bell:hover {
+  color: #000000; /* Цвет текста */
+  background: #abd8fd; /* Цвет фона */
+}
+.header__nav {
+  width: 100%;
+    background-color: #67A3FD;
+}
+
+.header__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  gap: 21px;
+  height: 48px;
+  padding-left: 1px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px
+}
+.header__link {
+    text-decoration: none;
+    color: #053058;
+    color: #ffffff; /* Цвет текста */
+    background: #67A3FD; /* Цвет фона */
+    padding: 10px; /* Поля вокруг текста */
+    transition: 0.5s linear; /* Время изменения */
+}
+
+.header__link:hover {
+color: #000000; /* Цвет текста */
+background: #abd8fd; /* Цвет фона */
+}
+
+/* header end */
+/* main start  */
+.main__img {
+  margin-top: 40px;
+ 
+}
+.main__img {
+  height: 820px;
+}
+
+.mechanic {
+  height: 780px;
+ }
+ .grey-image {
+    filter: grayscale(1); /* Черно-белый фильтр для изображения */
+    transition: 1s; /* Время изменения цвета изображения */
+ }
+ .grey-image:hover {
+  filter: grayscale(0); /* Цветное изображение при наведении */
+}
+.main__img h1 {
+  margin-left: 600px;
+  margin-top: -630px;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 56px;
+  text-align: center;
+  color: #FFFFFF;
+}
+/* таблица с ценами */
+.main__prices h2 {
+  text-align: center;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 47px;
+}
+
+.main__table {
+  height: 540px;
+}
+
+table {
+  border: 1px solid grey;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+
+color: #000000;
+}
+/* границы ячеек первого ряда таблицы */
+th {
+  border: 1px solid grey;
+}
+tr {
+  height: 50px;
+}
+/* границы ячеек тела таблицы */
+td {
+  border: 1px solid grey;
+  width: 80%;
+}
+table {
+  width: 100%;
+}
+/* задаст фиксированную ширину для таблицы */
+table {
+  width: 1150px;
+}
+.table__Blue {
+  background-color: #67A3FD;
+}
+.table__lightBlue {
+  background-color: #AFCCF8;
+}
+.gain-center{
+  transition: 1s; /* Время эффекта */
+  text-align: center; 
+}
+.gain-center:hover {
+  transform: scale(1.2); /* Увеличиваем масштаб */
+}
+  /* таблица с ценами конец */
+   /* карта начало  */
+  .main__map h2 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 47px;
+  }
+.main__map {
+  height: 600px;
+}
+  .map {
+    width: 1140px;
+    height: 470px;
+    margin-left: 15px
+  }
+  /* карта конец */
+
+  /* этапы начало */
+  .main__stage {
+    height: 700px;
+  }
+  
+  .main__stage h2 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 47px;
+  }
+  .main__stage--heading th {
+    background-color: #67A3FD;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 47px;
+    
+  }
+  .main__stage--text {
+    background-color: #D9D9D9;
+    text-align: left;
+  }
+  /* этапы конец */
+
+  /* нормативные документы начало */
+  .main__documents {
+      height: 500px;
+  }
+
+  .main__documents h2 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 47px;
+    margin-top: 30px;
+    padding-bottom: 30px;
+  }
+  .main__document--list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 38px;
+}
+.main__documents--law a {
+text-decoration: none;
+color: #000000;
+}
+.fz rules {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 38px;
+}
+.check {
+  text-align: center;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 38px;
+}
+.check h3 {
+  
+}
+.footer {
+  height: 202px;
+  background-color: #7D7A7A;
+  display: flex;
+}
+.footer__address {
+  display: flex;
+  font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+
+color: #FFFFFF;
+}    
+.footer__list {
+  display: flex;
+   justify-content: space-between;
+  align-items: center;
+ 
+}
+.footer__networks a {
+padding-left: 15px;
+}
+.footer__fhone {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: #FFFFFF;
+}
+  /* нормативные документы конец */
+
+/* main end  */
+.header__list {
+  width: 1000px;
+} 
+.mechanic {
+  width: 100%;
+  height: 680px;
+}
+@media screen and (max-width:1000px) {
+  .header__nav {
+    background: none;
+    width: 900px;
+    margin: auto;
+  }
+}
+@media screen and (min-width:829px) {
+  .mobile-menu {
+    display: none;
+  }
+  .map830 {
+    display: none;
+  }
+}
+
+@media screen and (max-width:830px) {
+  .header__nav {
+    display: none;
+  }
+  .mobile-menu {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 16px;
+    top: 0;
+    background-color: #67A3FD;
+    left: 0;
+    right: 0;
+    height: 50px;
+    z-index: 9999999;
+  }
+  .mobile-menu__btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 30px;
+    cursor: pointer;
+    transition: .4s;
+  }
+  .mobile-menu__icon {
+    display: block;
+    position: relative;
+    background: white;
+    width: 90%;
+    height: 4px;
+    transition: .4s;
+  }
+  .mobile-menu__icon::after, .mobile-menu__icon::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background: white;
+    width: 100%;
+    height: 4px;
+    transition: .4s;
+  }
+  .mobile-menu__icon::after {
+    top: 8px;
+  }
+  .mobile-menu__icon::before {
+    top: -8px;
+  }
+  .mobile-menu__container {
+    position: fixed;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 50px;
+    right: 0;
+    z-index: 999;
+    height: 0;
+    opacity: 1;
+    transition: .5s;
+    overflow: hidden;
+    background-color: #67A3FD;
+    width: 30%;
+    border-radius: 6%;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
+  .mobile-menu__list {
+    transition: .5s;
+    list-style: none;
+    padding-left: 0;
+    margin-top: -50px;
+  }
+  .mobile-menu__item {
+    font-size: 26px;
+    padding-bottom: 15px;
+  }
+  .mobile-menu__link {
+    text-decoration: none;
+    color: #fff;
+  }
+  .mobile-menu__checkbox {
+    display: none;
+  }
+  .mobile-menu__checkbox:checked ~ .mobile-menu__nav {
+    opacity: 1;
+  }
+  .mobile-menu__checkbox:checked ~ .mobile-menu__container {
+    height: 30%;
+  }
+  .mobile-menu__checkbox:checked ~ .mobile-menu__btn .mobile-menu__icon {
+    background: transparent;
+  }
+  .mobile-menu__checkbox:checked ~ .mobile-menu__btn .mobile-menu__icon::before, .mobile-menu__checkbox:checked ~ .mobile-menu__btn .mobile-menu__icon::after {
+    top: 0;
+  }
+  .mobile-menu__checkbox:checked ~ .mobile-menu__btn .mobile-menu__icon::after {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+  .mobile-menu__checkbox:checked ~ .mobile-menu__btn .mobile-menu__icon::before {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+  .header__info {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-evenly;
+    align-items: baseline;
+    width: 100%;
+  }
+  .header__img {
+    padding-top: 45px;
+    padding-bottom: 30px;
+  }
+  .container1 {
+    margin-left: 200px;
+    margin-bottom: 120px;
+  }
+  .header__address{
+    display: none;
+  }
+  .container {}
+  .map {
+    display: none;
+
+  }
+  .main__map {
+    text-align: -webkit-center;
+  }
+  .footer {
+    width: max-content;
+    
+}
+.footer__list {
+  justify-content: space-around;
+}
+.main__document--list {
+  justify-content: space-around;
+}
+
+}
+@media screen and (max-width:430px) {
+  body {
+    background: linear-gradient(86.8deg, #D3F4F7 3.02%, rgba(163, 216, 184, 0) 97.76%);
+}
+.main__img  {
+  display: none;
+}
+.mechanic h1 {
+  color: #000000;
+}
+
+
+}
